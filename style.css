@@ -129,6 +129,10 @@ body{
 }
 
 
+.history-exchange .layout-simple{
+  width: 100% !important;
+}
+
 .layout-simple{
     width: 600px;
   margin: 0px auto 0px auto;
@@ -245,7 +249,7 @@ body{
   border: 1px solid red !important; 
 }
 
-.btn-edits{
+.btn-edits, .btn-filter{
   color: #fff;
   background-color: #5cb85c;
   border-color: #4cae4c;
@@ -259,6 +263,10 @@ body{
 
 .btn-cancel:hover{
 
+}
+
+.btn-filter:hover {
+  
 }
 
 .btn-edits:hover {
@@ -326,7 +334,7 @@ body{
   margin-bottom: 0px !important
 }
 
-.btn-edit{
+.btn-edit, .btn-filter{
   width: 30px;
     height: 30px;
     background-color: orange;
@@ -338,7 +346,7 @@ body{
     padding-bottom: 4px;
 }
 
-.btn-edit img{
+.btn-edit img, .btn-filter img{
       top: 5px;
     left: 6px;
   position: absolute;
@@ -405,4 +413,92 @@ body{
 
 .group input::placeholder {
   font-size:11px;
+}
+
+.upgrade-filter, .upgrade-filter-table{
+  display: none;
+  transform: all 2s;
+}
+
+.display-block{
+  display: block !important;
+
+}
+
+.display-block1{
+  display: inline-table  !important;
+
+}
+
+.display-none{
+  display: none !important;
+}
+
+.hozi-ali{
+position: absolute;
+  top: 50%;
+  left: 50%;
+    text-align: center;
+    border-radius: 50%;
+  /* bring your own prefixes */
+  transform: translate(-50%, -50%);
+}
+
+.hozi-ali img{
+  border-radius: 50%;
+  border: 4px solid white;
+}
+
+.login-box{
+  min-width: 370px;
+ position: absolute;
+  top: 50%;
+  left: 50%;
+    text-align: center;
+
+  /* bring your own prefixes */
+  transform: translate(-50%, -50%);
+}
+
+.login-box-style {
+  padding: 10px 35px;
+  width: 100%;
+  margin: 0 auto 20px;
+  background: #FFFFFF;
+  box-shadow: 0 2px 6px 0 rgba(0,0,0,0.15);
+  border-radius: 4px 4px 4px 4px;
+}
+
+.title-login span{
+  font-size: 24px;
+    color: #157bb0;
+    letter-spacing: 0;
+    line-height: 50px;
+    font-weight: bold;
+}
+
+.title-login {
+  margin-bottom: 30px;
+}
+
+.logo-page-style{
+  width: 50%;
+  height: 50%;
+  float:left;
+}
+
+
+@media all and (max-width: 768px){
+  .logo-site{
+    display: none !important;
+  }
+  .login-site{
+    width: 100%;
+  }
+  .login-box-style{
+    padding: 10px 20px;
+  }
+  .login-box{
+    min-width: 310px;
+  }
 }

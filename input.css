@@ -115,3 +115,33 @@ input:focus ~ .highlight {
 textarea:focus ~ .bar:before, textarea:focus ~ .bar:after {
   width:50%;
 }
+
+.default-input{
+  margin-bottom: 15px;
+}
+
+.default-input input{
+  font-size:14px;
+  display: inline-block;
+  margin-left: 5px;
+  line-height: 1.5;
+  width: max-content;
+  color: #495057;
+  padding: 3px 12px;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.default-css-select, .default-input {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.default-css-select .select2-container--default{
+  top: 0px;
+   border: 1px solid #ced4da;
+  border-radius: 4px;
+}
