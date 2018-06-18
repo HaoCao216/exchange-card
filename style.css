@@ -23,6 +23,7 @@ body{
 .left-sidebar{
 	background-color: #157bb0;
 	top: 50px;
+	max-width: 260px !important;
     z-index: 1000;
     height: calc(100vh - 5rem);
     position: fixed !important;
@@ -239,6 +240,7 @@ body{
   padding: 0px !important;
   margin: 3px;
   height: 70px;
+  width: 115px;
 }
 
 .optional-card img:hover{
@@ -422,7 +424,6 @@ body{
 }
 
 .upgrade-filter, .upgrade-filter-table{
-  display: none;
   transform: all 2s;
 }
 
@@ -495,7 +496,17 @@ position: absolute;
 }
 
 
+@media all and (min-width: 1200px) and (max-width: 1300px){
+	.left-sidebar{
+		width: 260px !important;
+	}
+  .right-sidebar{
+    width: calc(100% - 260px) !important;
+  }
+}
+
 @media all and (max-width: 991px){
+
   .logo-site{
     display: none !important;
   }
@@ -510,8 +521,7 @@ position: absolute;
     min-width: 310px;
   }
   .left-sidebar{
-    width: 254px !important;
-    left: -254px;
+    left: -260px;
   }
   .right-sidebar{
     max-width: 100% !important;
@@ -529,6 +539,54 @@ position: absolute;
     max-width: 480px;
     margin-bottom: 40px;
   }
+  .flex-xl-nowrap{
+    margin: 0px -6px !important;
+  }
+}
+
+@media all and (max-width: 640px){
+  .layout-simple{
+    width: 100%;
+  }
+
+  .delete-padding{
+    padding: 0px !important;
+  }
+  .credit-card__step ul li{
+    font-size: 12px;
+    padding: 5px 0px 5px 15px;
+
+  }
+  .credit-card__step ul li span:first-child{
+    display: none;
+  }
+  .credit-card__step ul .steps::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 103%;
+    height: 100%;
+    width: 0;
+    z-index: 2;
+    border: 14px solid transparent;
+    border-right-width: 0;
+    border-left-width: 15px;
+    border-left-color: #157bb0;
+  }
+  .credit-card__step ul .steps::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 100%;
+    height: 100%;
+    width: 0;
+    z-index: 3;
+    border: 14px solid transparent;
+    border-right-width: 0;
+    border-left-width: 15px;
+    border-left-color: #fafafa;
+  }
+
 }
 
 @media all and (max-width: 510px){
@@ -545,6 +603,9 @@ position: absolute;
 }
 
 @media all and (max-width: 440px){
+  .layout-simple h3 {
+    font-size: 20px
+  }
   .analytics__child {
     width: 96px;
     height: 96px;
@@ -557,6 +618,19 @@ position: absolute;
   }
   .analytics__child div p{
     font-size: 12px
+  }
+}
+
+@media all and (max-width: 350px){
+  .select-price-btn div{
+    width: 102px;
+  }
+}
+
+@media all and (max-width: 330px){
+  .analytics__child {
+    width: 90px;
+    height: 90px;
   }
 }
 

@@ -145,3 +145,11 @@ textarea:focus ~ .bar:before, textarea:focus ~ .bar:after {
    border: 1px solid #ced4da;
   border-radius: 4px;
 }
+
+@media all and (max-width: 445px){
+  .default-css-select{
+    margin-bottom: 10px;
+  }
+
+
+}

@@ -24,7 +24,7 @@
 		</div>
 		<div class="container-fluid body-side">
 			<div class="row flex-xl-nowrap" style="position: relative;">
-				<div class="col-sm-12 col-md-3 left-sidebar">
+				<div class="col-sm-12 col-md-3 col-lg-2 left-sidebar">
 					<div class="profile-side">
 						<div><img src="image/icon-user.png" width="55px"></div>
 						<div class="name-user">
@@ -47,10 +47,10 @@
 						</ul>
 					</div>
 				</div>
-				<div class="col-sm-12 col-md-9 right-sidebar history-exchange" style="position: absolute;">
-					<div class="layout-simple credit-card show-infomation">
+				<div class="col-sm-12 col-md-9 col-lg-10 right-sidebar history-exchange" style="position: absolute;">
+					<div class="layout-simple credit-card show-infomation min-width-table">
 						<h3>LỊCH SỬ GIAO DỊCH <button class="btn-filter" onclick=><img src="image/information.svg" width="20px"></button></h3>
-						<div class="credit-card__body info-ss upgrade-filter" style="margin-bottom: 25px">
+						<div class="credit-card__body info-ss" style="margin-bottom: 25px">
 							<div class="default-input">
 								<label>Chọn khoảng thời gian: </label><input type="text" name="daterange" value />
 							</div>
@@ -65,7 +65,7 @@
 								</select>
 							</div>
 							<div>
-								<div class="group" style="width: 300px; margin-bottom: 0px">
+								<div class="group" style="width: 250px; margin-bottom: 7px">
 									<input type="text" required>
 									<span class="highlight"></span>
 									<span class="bar"></span>
@@ -76,7 +76,7 @@
 						</div>
 						<label>Tổng số:	</label>
 						<div class="">
-							<table id="customers" class="basic-table" style="margin-bottom: 50px">
+							<!-- <table id="customers" class="basic-table" style="margin-bottom: 50px">
 								<tr>
 									<th>Thời gian</th>
 									<th>Loại giao dịch	</th>
@@ -86,20 +86,9 @@
 								<tr>
 									<td colspan="4" style="color: red; text-align: center;">Không có dữ liệu!</td>
 								</tr>
-								<!-- <tr>
-									<td>30/5/2018</td>
-									<td>Nạp thẻ điện thoại</td>
-									<td>500.000</td>
-									<td>1.000.000</td>
-								</tr>
-								<tr>
-									<td>11/6/2018</td>
-									<td>Nạp thẻ điện thoại</td>
-									<td>20.000</td>
-									<td>550.000</td>
-								</tr> -->
-							</table>
-							<table id="customers" class="upgrade-filter-table">
+							</table> -->
+							<div style="overflow-x:auto;">
+							<table id="customers" class="upgrade-filter-table" style="width: 100%">
 								<tr>
 									<th>Mã Ref	</th>
 									<th>Thời gian</th>
@@ -115,19 +104,32 @@
 								<tr>
 									<td colspan="10" style="color: red; text-align: center;">Không có dữ liệu!</td>
 								</tr>
-								<!-- <tr>
-									<td>30/5/2018</td>
-									<td>Nạp thẻ điện thoại</td>
-									<td>500.000</td>
-									<td>1.000.000</td>
+								<tr>
+									<td>aaaaaaaaaaa</td>
+									<td>aaaaaaaaaaa</td>
+									<td>aaaaaaaaaaa</td>
+									<td>aaaaaaaaaaa</td>
+									<td>aaaaaaaaaaa</td>
+									<td>aaaaaaaaaaa</td>
+									<td>aaaaaaaaaaa</td>
+									<td>aaaaaaaaaaa</td>
+									<td>aaaaaaaaaaa</td>
+									<td>aaaaaaaaaaa</td>
 								</tr>
 								<tr>
-									<td>11/6/2018</td>
-									<td>Nạp thẻ điện thoại</td>
-									<td>20.000</td>
-									<td>550.000</td>
-								</tr> -->
+									<td>aaaaaaaaaaa</td>
+									<td>aaaaaaaaaaa</td>
+									<td>aaaaaaaaaaa</td>
+									<td>aaaaaaaaaaa</td>
+									<td>aaaaaaaaaaa</td>
+									<td>aaaaaaaaaaa</td>
+									<td>aaaaaaaaaaa</td>
+									<td>aaaaaaaaaaa</td>
+									<td>aaaaaaaaaaa</td>
+									<td>aaaaaaaaaaa</td>
+								</tr>
 							</table>
+							</div>
 						</div>	
 					</div>
 				</div>
